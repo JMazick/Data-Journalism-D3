@@ -14,3 +14,8 @@ employees.emp_no = salaries.emp_no;
 
 SELECT *
 FROM "table_one"
+
+-- List first name, last name, and hire date for employees who were hired in 1986
+SELECT employees.first_name, employees.last_name, employees.hire_date
+FROM "employees"
+WHERE ("hire_date")='1986'
