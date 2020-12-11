@@ -91,3 +91,8 @@ ORDER BY "frequency" DESC;
 
 SELECT * FROM "table_8"
 
+-- EPILOGUE
+SELECT *
+FROM "employees"
+WHERE "emp_no" = '499942';
+
