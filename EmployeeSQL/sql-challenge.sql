@@ -61,7 +61,7 @@ WHERE "dept_name" = 'Sales';
 
 SELECT * FROM "table_5"
 
-
+-- List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name
 
 
 
