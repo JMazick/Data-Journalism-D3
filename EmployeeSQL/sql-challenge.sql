@@ -37,3 +37,5 @@ FROM "departments"
 INNER JOIN "table_3_1" ON table_3_1.dept_no = departments.dept_no;
 
 SELECT * FROM "table_3"
+
+-- List the department of each employee with the following information: employee number, last name, first name, and department name.
