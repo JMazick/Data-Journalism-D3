@@ -65,7 +65,7 @@ SELECT * FROM "table_6"
 CREATE TABLE "table_7" AS
 SELECT table_4.emp_no, table_4.last_name, table_4.first_name, table_4.dept_name
 FROM "table_4"
-WHERE "dept_name" = 'Sales';
+WHERE "dept_name" = 'Sales'
+OR "dept_name" = 'Development';
 
-SELECT * FROM "table_6"
-
+SELECT * FROM "table_7"
