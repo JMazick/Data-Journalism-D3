@@ -6,17 +6,23 @@ SELECT *
 FROM "salaries"
 
 -- perform inner join with employees and salaries table
-CREATE TABLE "table_one" AS
+CREATE TABLE "table_1" AS
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM "salaries"
 INNER JOIN "employees" ON
 employees.emp_no = salaries.emp_no;
 
 SELECT *
-FROM "table_one"
+FROM "table_1"
 
 -- List first name, last name, and hire date for employees who were hired in 1986
+CREATE TABLE "table_2" AS
+SELECT employees.first_name, employees.last_name, employees.hire_date
+FROM "employees"
+WHERE "hire_date" >= '1986-01-01'
+AND "hire_date" < '1986-12-31';
 
+SELECT * FROM "table_2"
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name
 SELECT * FROM "dept_manager"
