@@ -51,7 +51,9 @@ INNER JOIN "employees" ON employees.emp_no = table_4_1.emp_no;
 
 SELECT * FROM "table_4"
 
--- 
+-- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+
+
 
 
 
