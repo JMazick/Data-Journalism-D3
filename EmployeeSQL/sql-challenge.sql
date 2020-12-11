@@ -56,11 +56,9 @@ CREATE TABLE "table_5" AS
 SELECT employees.first_name, employees.last_name, employees.sex
 FROM "employees"
 WHERE "first_name" = 'Hercules'
-AND "last_name" 
+AND "last_name" LIKE 'B%';
 
 SELECT * FROM "table_5"
-
-
 
 -- List all employees in the Sales department, including their employee number, last name, first name, and department name.
 CREATE TABLE "table_6" AS
