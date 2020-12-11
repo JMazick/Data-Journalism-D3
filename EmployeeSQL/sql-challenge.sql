@@ -16,8 +16,7 @@ SELECT *
 FROM "table_one"
 
 -- List first name, last name, and hire date for employees who were hired in 1986
-SELECT YEAR(hire_date)
-FROM "employees"
+
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name
 SELECT * FROM "dept_manager"
