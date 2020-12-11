@@ -39,3 +39,19 @@ INNER JOIN "table_3_1" ON table_3_1.dept_no = departments.dept_no;
 SELECT * FROM "table_3"
 
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
+CREATE TABLE "table_4_1" AS
+SELECT dept_emp.emp_no, dept_emp.dept_no, departments.dept_name
+FROM "departments"
+INNER JOIN "dept_emp" ON dept_emp.dept_no = departments.dept_no;
+
+CREATE TABLE "table_4" AS
+SELECT employees.emp_no, employees.last_name, employees.first_name, table_4_1.dept_name
+FROM "table_4_1"
+INNER JOIN "employees" ON employees.emp_no = table_4_1.emp_no;
+
+SELECT * FROM "table_4"
+
+-- 
+
+
+
