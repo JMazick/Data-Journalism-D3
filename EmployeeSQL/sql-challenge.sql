@@ -53,6 +53,7 @@ SELECT * FROM "table_4"
 
 -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 
+-- List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
 
 
